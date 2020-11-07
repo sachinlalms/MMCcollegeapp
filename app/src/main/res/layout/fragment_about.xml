@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mmcc"
+            android:id="@+id/college_image"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History of MMC"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/latobold"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:fontFamily="@string/light"
+            android:justificationMode="inter_word"
+            android:text="@string/about_college"
+             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/text_margin"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_label"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Bank"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size01"
+                    android:fontFamily="@font/latoregular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/text_margin"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_label"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hostels"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size01"
+                    android:fontFamily="@font/latoregular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/text_margin"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_label"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Canteen"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size01"
+                    android:fontFamily="@font/latoregular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/text_margin"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_label"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anti-ragging Cell"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size01"
+                    android:fontFamily="@font/latoregular"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programmes"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+
+            android:fontFamily="@font/latobold"
+
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size" />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/text_margin"
+            android:foregroundGravity="center"
+            android:clipToPadding="false"
+            android:overScrollMode="always"
+            android:id="@+id/viewPager"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/latobold"
+                android:text="Contact Details"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/light"
+                android:justificationMode="inter_word"
+                android:text="Mary Matha Arts and Science College"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/light"
+                android:justificationMode="inter_word"
+                android:text="Vemom PO, Mananthavady, Wayanad 670 645"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/light"
+                android:justificationMode="inter_word"
+                android:text="Email: mmcmananthavady@gmail.com"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:fontFamily="@string/light"
+                android:justificationMode="inter_word"
+                android:text="Phone: 0493 241 087"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size" />
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/map"
+                android:id="@+id/map"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
