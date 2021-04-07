@@ -30,7 +30,7 @@ public class EbookAdapter extends RecyclerView.Adapter<EbookAdapter.EbookViewHol
     @NonNull
     @Override
     public EbookViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.ebook_item_layout,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.ebook_item_layout, parent, false);
         return new EbookViewHolder(view);
     }
 
@@ -43,8 +43,8 @@ public class EbookAdapter extends RecyclerView.Adapter<EbookAdapter.EbookViewHol
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(context,PdfViewerActivity.class);
-                intent.putExtra("pdfUrl",list.get(position).getpdfUrl());
+                Intent intent = new Intent(context, PdfViewerActivity.class);
+                intent.putExtra("pdfUrl", list.get(position).getpdfUrl());
                 context.startActivity(intent);
             }
         });
@@ -73,13 +73,11 @@ public class EbookAdapter extends RecyclerView.Adapter<EbookAdapter.EbookViewHol
         private ImageView ebookDwnld;
 
 
-
-
         public EbookViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            ebookName=itemView.findViewById(R.id.ebookName);
-            ebookDwnld=itemView.findViewById(R.id.ebookDwnld);
+            ebookName = itemView.findViewById(R.id.ebookName);
+            ebookDwnld = itemView.findViewById(R.id.ebookDwnld);
 
         }
     }

@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@drawable/ic_csd"
+        android:src="@drawable/asap"
         android:id="@+id/pimg"
         />
     <TextView
@@ -17,17 +17,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:fontFamily="@font/latobold"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/textColor"
         android:id="@+id/titl"
-        android:text="Computer Science"/>
+        android:text="Additional Skill Acquisition Programme"/>
 
     <TextView
         android:id="@+id/content"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:justificationMode="inter_word"
+        android:fontFamily="@font/latoregular"
+        android:textSize="@dimen/text_size01"
+        android:textColor="@color/textColor"
 
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        android:justificationMode="inter_word"
+        android:text="@string/asap"
+
 
         />
 

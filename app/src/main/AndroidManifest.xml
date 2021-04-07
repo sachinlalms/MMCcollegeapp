@@ -6,12 +6,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/mmc"
+        android:icon="@mipmap/ic_launcher_mmc"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/mmc"
+        android:roundIcon="@mipmap/ic_launcher_mmc"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaryMathaUser">
-        <activity android:name=".FullImageView"></activity>
+        <activity android:name=".DeveloperActivity"></activity>
+        <activity android:name=".DeparmentActivity" />
+        <activity android:name=".Facilities" />
+        <activity android:name=".qpapper.PdfViewActivity" />
+        <activity android:name=".qpapper.QuestionActivity" />
+        <activity android:name=".FullImageView" />
         <activity android:name=".ebook.PdfViewerActivity" />
         <activity
             android:name=".ebook.EbookActivity"

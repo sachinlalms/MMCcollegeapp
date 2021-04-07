@@ -34,11 +34,10 @@
                         android:id="@+id/teacher_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/latoregular"
                         android:text="Sachin Lal M s"
                         android:padding="3dp"
-                        android:textColor="@color/textColor"
-                        android:textSize="@dimen/title_size" />
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
 
                     <TextView
                         android:id="@+id/teacher_post"
@@ -48,7 +47,7 @@
                         android:text="Principal"
                         android:padding="3dp"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/text_size2" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/teacher_email"
@@ -56,8 +55,9 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/latoregular"
                         android:text="sachinlalms111@gmail.com"
+                        android:padding="3dp"
                         android:textColor="@color/textColor"
-                        android:textSize="@dimen/text_size" />
+                        android:textSize="14dp" />
 
 
                 </LinearLayout>

@@ -27,9 +27,9 @@ import java.util.List;
 public class FacultyFragment extends Fragment {
 
 
-    private RecyclerView csDept, phyDept, matDept, cheDept, zoDept, cDept, eDept, jDept, ptDept, pDept, sDept, mlDept, hDept, btDept;
-    private LinearLayout CsnoData, chenoData, matnoData, phynoData, zonoData, cnoData, enoData, jnoData, ptnoData, pnoData, snoData, mlnoData, hnoData, btnoData;
-    private List<TeacherData> list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14;
+    private RecyclerView csDept, phyDept, matDept, cheDept, zoDept, cDept, eDept, jDept, ptDept, pDept, sDept, mlDept, hDept, btDept,prDept;;
+    private LinearLayout CsnoData, chenoData, matnoData, phynoData, zonoData, cnoData, enoData, jnoData, ptnoData, pnoData, snoData, mlnoData, hnoData, btnoData,prnoData;;
+    private List<TeacherData> list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14,list15;
     private DatabaseReference reference,dbref;
     private TeacherAdapter adapter;
 
@@ -43,6 +43,8 @@ public class FacultyFragment extends Fragment {
 
         cheDept = view.findViewById(R.id.cheDept);
         chenoData=view.findViewById(R.id.chenoData);
+        prDept = view.findViewById(R.id.prDept);
+        prnoData = view.findViewById(R.id.prnoData);
         matDept=view.findViewById(R.id.matDept);
         matnoData=view.findViewById(R.id.matnoData);
         phyDept=view.findViewById(R.id.phyDept);
@@ -86,7 +88,40 @@ public class FacultyFragment extends Fragment {
         mlDept();
         hDept();
         btDept();
+        prDept();
         return view;
+    }
+    private void prDept() {
+        dbref = reference.child("Principal");
+        dbref.addValueEventListener(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                list15 = new ArrayList<>();
+                if (!dataSnapshot.exists()) {
+                    prnoData.setVisibility(View.VISIBLE);
+                    prDept.setVisibility(View.GONE);
+                } else {
+
+                    prnoData.setVisibility(View.GONE);
+                    prDept.setVisibility(View.VISIBLE);
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        TeacherData data = snapshot.getValue(TeacherData.class);
+                        list15.add(data);
+                    }
+                    prDept.setHasFixedSize(true);
+                    prDept.setLayoutManager(new LinearLayoutManager(getContext()));
+                    adapter = new TeacherAdapter(list15, getContext());
+                    prDept.setAdapter(adapter);
+                }
+
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
 
     private void csDept() {

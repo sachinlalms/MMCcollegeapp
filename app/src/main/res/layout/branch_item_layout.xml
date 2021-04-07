@@ -2,10 +2,12 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="@dimen/text_margin"
+    app:cardElevation="6dp"
     app:cardPreventCornerOverlap="true"
-    app:cardCornerRadius="30dp"
-    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="35dp"
+    app:cardBackgroundColor="#f0f0f0"
+    android:layout_margin="10dp"
+    android:padding="10dp"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -46,8 +48,8 @@
             android:id="@+id/br_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/text_margin"
-            android:layout_marginTop="@dimen/text_margin"
+            android:layout_margin="18dp"
+            android:textColor="#000000"
             android:fontFamily="@string/light"
             android:justificationMode="inter_word"
             android:text="@string/about_college"

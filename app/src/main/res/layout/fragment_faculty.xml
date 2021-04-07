@@ -23,7 +23,7 @@
                 android:gravity="center"
                 android:text="Principal"
                 android:textColor="@color/textColor"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <View
@@ -32,57 +32,25 @@
                 android:layout_marginVertical="8dp"
                 android:background="#c1c1c1" />
 
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/prDept"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="@dimen/text_margin"
+                android:nestedScrollingEnabled="false"
+
+
+                android:visibility="gone" />
+
+            <LinearLayout
+
+                android:id="@+id/prnoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
+                <include layout="@layout/no_data_found" />
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/text_margin"
-                        android:layout_weight="1.5"
-                        android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:paddingLeft="15dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/latoregular"
-                            android:text="Dr Maria Martin Joseph"
-                            android:textColor="@color/textColor"
-                            android:textSize="@dimen/title_size" />
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/latoregular"
-                            android:text="mariamartinjoseph@gmail.com"
-                            android:textColor="@color/textColor"
-                            android:textSize="@dimen/text_size" />
-
-
-                    </LinearLayout>
-
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="0.5"
-                        android:src="@drawable/avatar" />
-
-                </LinearLayout>
             </LinearLayout>
 
 
@@ -94,7 +62,7 @@
                 android:gravity="center"
                 android:text="Computer Science"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -131,7 +99,7 @@
                 android:gravity="center"
                 android:text="Physics"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -168,7 +136,7 @@
                 android:gravity="center"
                 android:text="Mathematics"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -206,7 +174,7 @@
                 android:gravity="center"
                 android:text="Chemistry"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -243,7 +211,7 @@
                 android:gravity="center"
                 android:text="Zoology"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+            android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -283,7 +251,7 @@
                 android:gravity="center"
                 android:text="Commerce"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -324,7 +292,7 @@
                 android:gravity="center"
                 android:text="English"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -363,7 +331,7 @@
                 android:gravity="center"
                 android:text="Political Science"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -401,7 +369,7 @@
                 android:gravity="center"
                 android:text="Journalism"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -440,7 +408,7 @@
                 android:gravity="center"
                 android:text="Statistics"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -479,7 +447,7 @@
                 android:gravity="center"
                 android:text="Biological Techniques"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -517,7 +485,7 @@
                 android:gravity="center"
                 android:text="Hindi"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -555,7 +523,7 @@
                 android:gravity="center"
                 android:text="Malayalam"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View
@@ -593,7 +561,7 @@
                 android:gravity="center"
                 android:text="Physical Education"
                 android:textColor="@color/textColor"
-                android:textSize="22sp"
+                android:textSize="19sp"
                 android:textStyle="bold" />
 
             <View

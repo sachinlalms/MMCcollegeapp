@@ -75,7 +75,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -100,7 +100,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -125,7 +125,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -151,7 +151,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -177,7 +177,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -203,7 +203,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -229,7 +229,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -256,7 +256,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -284,7 +284,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -310,7 +310,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -336,7 +336,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -362,7 +362,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
@@ -388,7 +388,7 @@ public class GalleryFragment extends Fragment {
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
                     String data= (String) snapshot.getValue();
-                    imagelist.add(data);
+                    imagelist.add(0,data);
 
                 }
 
